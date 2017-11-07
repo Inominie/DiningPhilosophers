@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>WebSlides Keynote: Make a Keynote presentation using HTML</title>
+    <meta name="description" content="WebSlides is the easiest way to make HTML presentations. Just essential features, clean code, and lovely CSS.">
+
+    <!-- URL CANONICAL -->
+    <!-- <link rel="canonical" href="http://your-url.com/permalink"> -->
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type="text/css" media="all" href="static/css/svg-icons.css">
+
+</head>
+
+
+<body>
+    <header role="banner">
+        <nav role="navigation">
+            <p class="logo"><a href="index.html" title="WebSlides">WebSlides</a></p>
+            <ul>
+                <li class="github">
+                    <a rel="external" href="https://github.com/webslides/webslides" title="Github">
+                        <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+                        <em>WebSlides</em>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main">
+        <article id="webslides" class="vertical">
+
+            <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+            <section class="bg-apple aligncenter">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <h1>The Dining Philosophers Problem</h1>
+                    <h3>oder Philosophenproblem</h3><br><br>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <div class="wrap">
+                    <h3>Edsger Wybe Dijkstra</h3>
+                    <img class="" src="static/images/Dijkstra.jpg" alt="Edsger Wybe Dijkstra, 2002" />
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="wrap">
+                    <div class="aligncenter">
+                        <h2>Dijkstras Werdegang</h2>
+                    </div>
+                    <ul class="flexblock features" style="font-size:22px;">
+                        <li>
+                            Niederländer,<br> geboren 1930 in Rotterdam
+                        </li>
+                        <li>
+                            Erster Programmierer der Niederlande
+                        </li>
+                        <li>
+                            Mitbegründer der strukturierten Programmierung
+                        </li>
+                        <li>
+                            Studierte Mathematik und theoretische Physik
+                        </li>
+                        <li>
+                            Mathematikprofessor an der Technischen Hochschule Eindhoven
+                        </li>
+                        <li>
+                            Ehrendoktortitel<br>Queen’s University of Belfast <br> Wirtschaftsuniversität Athen
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="wrap">
+                    <h2 class="aligncenter">Dijkstras Errungenschaften</h2>
+                    <div class="content-left">
+                        <div class="grid vertical-align">
+                            <div class="column">
+                                <ul class="description">
+                                    <li><strong>Dijkstra-Algorithmus</strong><br> zur Berechnung eines kürzesten Weges in einem Graphen</li>
+                                    <li><strong>Semaphoren</strong><br> zur Synchronisation zwischen Threads</li>
+                                    <li><strong>Philosophenproblem</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-left">
+                        <div class="grid vertical-align">
+                            <div class="column">
+                                <ul class="description">
+                                    <li><strong>einige Mathematische Algorithmen</strong></li>
+                                    <li><strong>Turing Award</strong><br>gilt als höchste Auszeichnung in der Informatik, vergleichbar dem Nobelpreis</li>
+                                    <li><strong>Dijkstra Preis</strong><br> für herausragende Arbeiten in Verteiltem Rechnen</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-apple">
+                <!--.wrap = container (width: 90%) -->
+                <div class="wrap">
+                    <blockquote class="text-quote">
+                        <p>If debuggin is the process of removing software bugs, then programming must be the process of putting them in.</p>
+                    </blockquote>
+                    <p><cite>Edsger Wybe Dijkstra </cite></p>
+                </div>
+            </section>
+            <section class="bg-apple aligncenter">
+                <span class="background dark" style="background-image:url(static/images/dining.jpg)"></span>
+
+                <h2>The Dining Philosophers Problem</h2>
+            </section>
+            <section class="bg-apple">
+                <div class="wrap">
+                    <img class="alignleft size-40" src="static/images/dining2.jpg">
+                    <div class="alignright size-50">
+                        <ul class="description">
+                            <h2>Voraussetzungen</h2><br><br>
+                            <li> Es liegt eine Gabel zwischen den Teller<br><br> Essen nur mit zwei Gabeln<br><br> Jede Gabel wird einzeln aufgenommen
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="aligncenter">
+                    <h1>Probleme</h1>
+                    <div class="grid">
+                        <div class="column">
+                            <h3>deadlock<br></h3>
+                            <h5>(Deadlock)</h5><br>
+                            <p>
+                                Jeder Philosoph wartet auf seine Rechte Gabel, diese ist aber durch seinen rechten Sitznachbarn belegt.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h3>starvation<br></h3>
+                            <h5>(Verhungern)</h5><br>
+                            <p>
+                                Jeder Philosoph wartet unendlich lange auf die rechte Gabel, da keiner seine linke Gabel ablegt.
+                            </p>
+                        </div>
+                        <div class="column">
+                            <h3>concurrency<br></h3>
+                            <h5>(Nebenläufigkeit)</h5><br>
+                            <p>Zwei Philosophen greifen gleichzeitig auf die selbe Gabel zu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="aligncenter">
+                    <h2>Pseudocode</h2><br><br>
+                    <ul class="description">
+
+                        <p>denken();<br> linkeGabelAufnehmen();
+                            <br> rechteGabelAufnehmen();
+                            <br> essen();
+                            <br> linkeGabelAblegen();
+                            <br> rechteGabelAblegen();
+                            <br>
+                        </p>
+                    </ul>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="aligncenter">
+                    <h1>Lösungen</h1><br><br>
+                    <div class="grid">
+                        <div class="column">
+                            <h4>Ressourcen Hierarchie</h4>
+
+                        </div>
+                        <div class="column">
+                            <h4>Der Kellner</h4>
+                        </div>
+                        <div class="column">
+                            <h4>Chandy/Misra Lösung</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="wrap">
+                    <img class="alignleft size-40" src="static/images/pb_numbered.png">
+                    <div class="alignright size-50">
+                        <h2><u>Resourcen Hierarchie</u></h2>
+                        <ul style="font-size: 22px; list-style: disc">
+                            <li>Dijkstra's urspüngliche Lösung </li>
+                            <li>Jeder Philosoph nimmt zuerst die niedrigste zur Verfügung stehende Gabel auf</li>
+                        </ul>
+                        <br><br>
+                        <h4><u>Vorteile:</u></h4>
+                        <ul style="font-size: 22px; list-style: disc">
+                            <li>Vermeidung von Deadlocks</li>
+                        </ul>
+                        <br><br>
+                        <h4><u>Nachteile:</u></h4>
+                        <ul style="font-size: 22px; list-style: disc">
+                            <li>Ineffizient, vorallem bei unbestimtmer Anzahl von Ressources</li>
+                            <li>Mögliche "Starvation"</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="wrap">
+                    <img class="alignleft size-40" src="static/images/waitress.jpg">
+                    <div class="alignright size-50">
+                        <h2><u>Der Kellner</u></h2>
+                        <ul style="font-size: 18px; list-style: disc">
+                            <li>Ressources Verwaltung durch aussenstehende Instanz </li>
+                            <li>Jeder Philosoph holt sich vom Kellner die Erlaubnis, Gabeln aufzunehmen</li>
+                            <li>Der Kellner erteilt immer nur einem Philosophen gleichzeitig eine Berechtigung</li>
+                            <li>Ebenfalls druch "Mutex"/Synchronisation umsetzbar</li>
+                        </ul>
+                        <br><br>
+                        <h4><u>Vorteile:</u></h4>
+                        <ul style="font-size: 22px; list-style: disc">
+                            <li>Vermeidung von Deadlocks und "Starvation"</li>
+                        </ul>
+                        <br><br>
+                        <h4><u>Nachteile:</u></h4>
+                        <ul style="font-size: 22px; list-style: disc">
+                            <li>Vermindert parallelen Ablauf der Threads</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="aligncenter">
+                    <h2><u>Chandy/Misra Lösung</u></h2><br><br>
+                </div>
+                <div class="wrap size-50">
+                    <ul style="font-size: 22px; list-style: disc">
+                        <li>Enteht aus einem Algorithmus zur Vermeidung von Deadlocks</li>
+                        <li>Philosophen kommunizieren untereinander</li>
+                        <li>Gabeln besitzen die Zustände "sauber" und "dreckig"</li>
+                        <li>Druch eine einmalige initiale Zuweisung von Gabeln können Deadlocks und Starvation garantiert vermieden werden</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="bg-apple">
+                <div class="aligncenter">
+                    <h1><a href="https://gist.github.com/anonymous/950cc9ca2786fdb2f16d04c0ae9a59b3#file-gistfile1-txt" target="_blank">Java Beispiel</a></h1>
+                </div>
+            </section>
+            <section class="bg-apple">
+            <div class="aligncenter">
+                <h1> Vielen Dank für die<br> Aufmerksamkeit</h1>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="static/js/webslides.js"></script>
+
+    <script>
+        window.ws = new WebSlides();
+
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+</body>
+
+</html>
